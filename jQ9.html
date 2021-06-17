@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>jQuery chaining</p>
+    <button>Click Me!!</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("p").css("color","red").slideUp(1000).slideDown(1000);
+       
+            });
+             });
+    </script>
+</body>
+</html>

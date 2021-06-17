@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JavaScript Functions</h2>
+    <p id="demo"></p>
+    <script>
+        var person = { firstname: "abc", age: "24", fullname: myfunction(){
+            return this.firstname + " " + this.age;
+    }
+    };
+        document.getElementById("demo").innerHTML= person.fullname(); 
+    </script>
+</body>
+
+</html>

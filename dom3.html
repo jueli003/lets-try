@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JAVASCRIPT DOM</h2>
+    <p id="class">HTML DOM events allow JavaScript to register different event handlers on elements in an HTML document.
+    </p>
+    <div id="B">
+        <ul>
+            <li class="class">1 item</li>
+            <li>2 item</li>
+            <li class="class2">3 item</li>
+            <li>4 item</li>
+
+        </ul>
+    </div>
+    <div class="dv">
+        <p id="p">Learning Speed
+            In this tutorial, the learning speed is your choice.</p>
+
+        <script>
+            // var a = document.querySelector('h2');
+            // console.log(a);
+            // a.innerHTML = "hello world";
+            // var a2 = document.querySelector(".class");
+            // console.log(a2);
+            // a2.innerHTML = "first";
+            // a2.style.color = "blue";
+            // var a3 = document.getElementById('class');
+            // a3.style.color = "red";
+            // var a4 = document.querySelector('.class2');
+            // console.log(a4);
+            // a4.innerHTML = "Third";
+            // var a5 = document.getElementById('p');
+            // console.log(a5);
+            // a5.style.color = "blue";
+            // a5.style.border = " 2px solid black";
+            // var a6 = document.getElementsByTagName('a');
+            // console.log(a6);
+
+          var a2 = document.querySelector('ul');
+          a2.addEventListener('click',function n(){
+              console.log('click');
+          })
+ </script>
+</body>
+
+</html>

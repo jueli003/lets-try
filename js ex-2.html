@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Javascript</h2>
+    
+    <button type ="button" onclick="msg1('helloo')">click1</button>
+    <button type ="button" onclick="msg2('helloo')">click2</button>
+    <button type ="button" onclick="msg3('helloo')">click3</button>
+
+
+    <script>
+        var var1, var2,var3;
+        var1=var2=var3=0;
+        function msg1(){
+            var1++;
+            msg();
+        }
+        function msg2(){
+            var2++;
+            msg();
+        }
+        function msg3(){
+            var3++;
+            msg();
+        }
+        function msg(){
+            document.querySelector('h2').innerHTML= var1 + "" + var2 + "" + var3;
+        }
+    </script>
+</body>
+
+</html>

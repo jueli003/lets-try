@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <button id="btn1">Set Text</button>
+    <button id ="btn2">Set HTML</button>
+    <button id ="btn3">Set Value</button>
+    <p id ="p1">this is paragraph</p>
+    <p id ="p2">this is another paragraph</p>
+    
+   Input: <input for ="text" id="text1"name=" " value="jueli">
+    
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#p1").text("helloo");
+            })
+            $("#btn2").click(function(){
+                $("#p2").html("Welcome");
+             
+            })
+            $("#btn3").click(function(){
+                $("#text1").val("Thakare");
+             
+            })
+        })
+    </script>
+</body>
+</html>

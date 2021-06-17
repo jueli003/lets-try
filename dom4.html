@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="B">
+        <ul>
+            <li class="class">1 item</li>
+            <li>2 item</li>
+            <li class="class2">3 item</li>
+            <li>4 item</li>
+
+        </ul>
+        <input type ="text" id ="newitem" onkeypress="newitem()">
+    </div>
+<script>
+  var a2 = document.querySelector('ul');
+          a2.addEventListener('keypress',function newitem(){
+              console.log("keypress");
+          })
+  
+</script>
+</body>
+</html>

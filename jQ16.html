@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <style>
+         div{
+             padding: 3px;
+             border: 2px solid black;
+             margin: 10px;
+             display: block;
+         }
+     </style>
+</head>
+<body>
+   <div>
+       <h2>helloo</h2>
+       <p>paragraph</p>
+       <h3>heading</h3>
+    
+   </div> 
+   <script>
+       $(document).ready(function(){
+           $("p").siblings().css({"border":"2px solid blue"})
+            $("h2").nextAll().css({"border":"2px solid red"});
+       });
+   </script>
+</body>
+</html>

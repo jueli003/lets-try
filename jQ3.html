@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>Click Me,I will show you something</p>
+    <button id ="hide">Hide</button>
+    <button id ="show">Show</button>
+    <script>
+    $(document).ready(function(){
+        $("#hide").click(function(){
+         $("p").hide(500);
+        })
+        $("#show").click(function(){
+         $("p").show();
+        })
+        $("button").mouseleave(function(){
+         $(":button").css("background-color","red");
+
+        })
+        $("button").mousedown(function(){
+         $(":button").css("background-color","yellow");
+
+        })
+        
+    })
+    </script>
+</body>
+</html>

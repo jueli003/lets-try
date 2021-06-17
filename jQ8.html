@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #flip2{
+            display: none;
+            padding: 10px;
+
+        }
+        #flip,#flip2{
+            text-align: center;
+            background-color: aliceblue;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+   <button id ="stop">Stop slidind</button> 
+   <button id ="start">Start sliding</button>
+   <div id = "flip">click to slide down</div>
+   <div id = "flip2">Hello world</div>
+   <script>
+       $(document).ready(function(){
+           $("#flip").click(function(){
+               $("#flip2").slideDown(3000);
+           })
+         $("#stop").click(function(){
+           $("#flip2").stop();  
+         });
+         $("#start").click(function(){
+             $("#flip2").start();
+         })
+       });
+   </script>
+</body>
+</html>

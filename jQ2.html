@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>></script>
+
+
+</head>
+
+<body>
+    <p>this is a paragraph 1</p>
+    <script>
+        $(document).ready(function () {
+            $("p").dblclick(function () {
+                $(this).css("background-color","grey");
+            });
+        });
+        $(function(){
+            $("p").hover(function(){
+                $(this).css("background-color","green");
+            })
+        })
+        $(function(){
+            $("p").mouseleave(function(){
+                $(this).css("backgrond-color","skyblue");
+            });     
+        })
+           
+        
+    </script>
+</body>
+
+</html>

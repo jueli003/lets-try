@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <button id ="btn1">Appended Text</button>
+    <button id ="btn2">Prependedded list items</button>
+    <p id ="p1">This is paragraph.</p>
+    <ol>
+        <li>List Items 1</li>
+        <li>List Items 2</li>
+        <li>List Items 3</li>
+    </ol>
+    <script>
+        $(document).ready(function(){
+            $("#btn1").click(function(){
+                $("#p1").append("paragraph 1");
+            })
+        $("#btn2").click(function(){
+            $("ol").prepend("<li>Prepended item</li>");
+
+        })
+        })
+    </script>
+
+</body>
+</html>

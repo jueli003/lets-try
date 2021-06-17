@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        #div,#p2{
+            padding: 50px;
+            text-align: center;
+            background-color: grey;
+            border-radius: 1px solid black;
+
+        }
+        #p2{
+            display:none;
+            padding: 50px;
+        }
+        #btn{
+            margin-top: 20px;
+            margin-left: 5px;
+        text-align: center;
+        padding: 5px;
+        }
+    </style>     
+</head>
+<body>
+    <p>This is paragraph</p>
+    <p id ="p1"></p>
+    <h2>jQuery</h2>
+    <div id ="div">click me to slidedown</div>
+    <div id ="p2">helloo world</div>
+    <button id= "btn">STOP</button>
+    <script>
+        $(document).ready(function(){
+            $("p").dblclick(function() {
+            $("p").css("background-color" ,"green")
+        })
+        $(function(){
+            $("#p1").append("Welcome");
+        
+        })
+        })
+        $(document).ready(function(){
+            $("#div").click(function(){
+                $("#p2").slideDown(5000);
+            })
+        $("#btn").click(function(){
+            $("#p2").stop();
+        })
+        })
+      
+        </script>
+</body>
+</html>

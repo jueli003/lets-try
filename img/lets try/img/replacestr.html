@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>JS string replace method</h2>
+    <button onmouseover="myfunction()"> click me</button>
+    <p id="a">please visit google</p>
+    <script>
+        function myfunction() {
+            var str = document.getElementById("a").innerHTML;
+            var b = str.replace("google", "w3school");
+            document.getElementById("a").innerHTML = b;
+
+        }
+    </script>
+</body>
+
+</html>

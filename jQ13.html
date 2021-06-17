@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .red{
+            color: blue;
+        }
+        .p1{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Helloo</h1>
+    <h2>Welcome</h2>
+    <p>Harry Potter</p>
+    <p class ="p1">Hogwords</p>
+    <h3 class ="p1">potter</h2>
+    <button id ="btn1">clickkk</button>
+    <button>click Me!!!</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h1,h2,p").toggleClass("red");
+
+            })
+        })
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("p,h3").removeClass("p1");
+    })
+})
+    </script>
+</body>
+</html>

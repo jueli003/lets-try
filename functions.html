@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id ="P">This is paragraph</p> 
+  <p id = "p2">This is another paragraph</p> 
+  <p id = " pp">This is third paragraph.</p>
+  <script>
+      var car ={
+          name : "Harry",
+          lastname : "potter",
+          address : "Hogwords",
+          
+          fullname : function(){
+              return "My name is " + " " + this.name + " " + this.lastname +" " + "i am from " + " "+this.address; 
+
+          }
+
+      };
+      document.getElementById("P").innerHTML = car.fullname();
+    //   document.getElementById("P").innerHTML = "My name is "  +  car.name ;
+    //   console.log(car["lastname"]);
+    //   car.name = "HARRY";
+    //   document.getElementById("p2").innerHTML = " I am  "+ car.name + " now.";
+      document.getElementById("p2").innerHTML= typeof "potter";
+      function myFunction(a, b) {
+  return a * b;
+}
+document.getElementById("pp").innerHTML = myFunction.toString();
+
+  </script>
+</body>
+</html>

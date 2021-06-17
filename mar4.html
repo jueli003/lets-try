@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #txt:hover{
+            background-color: rgb(151, 223, 223);
+
+        }
+        #txt{
+            padding: 5px;
+            border: 2px solid black;
+            
+        }
+    </style>
+</head>
+<body>
+  <p>this is paragraph</p>  
+  <input type="text" id="txt" value=" " onchange="my()">
+  <ul>
+      <li>first</li>
+      <li>second</li>
+      <li>third</li>
+  </ul>
+  <script>
+    function my(){
+         var x= document.getElementById("txt").value.toUpperCase();
+         var y= document.getElementById("txt");
+         y.value=x;
+     }
+
+    
+  </script>
+</body>
+</html>
